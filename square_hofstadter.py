@@ -149,7 +149,7 @@ def w_eigs(n, bands, p, q, tb, ta, vect1, vect2, vect0):
                 w_elem = np.dot(np.conjugate(eigvect0[:, bands[k]]), np.dot(proj_prod, eigvect0[:, bands[l]]))
                 w_mat[k, l] = w_elem
         
-        # Get eigenvlaues and arguments
+        # Get eigenvalues and arguments
         vals = np.linalg.eigvals(w_mat)
         eigs_list.append((kx, [np.angle(val) for val in vals]))
     return eigs_list
