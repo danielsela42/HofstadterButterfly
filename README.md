@@ -6,7 +6,7 @@ This repository contains a Python implementation of the **Hofstadter model**, a 
 
 ## Physical Background
 
-The Hofstadter model describes electrons moving on a two-dimensional square lattice with a perpendicular uniform magnetic field. The magnetic field affects adds phase factors to the hopping between neighboring sites. The total phase picked up around a lattice plaquette corresponds to a magnetic flux $\phi$. When the flux is rational, i.e. (\phi = 2 \pi \frac{p}{q}) for coprime integers $p, q$, the magnetic field enlarges the effective unit cell of the lattice in real space. The single-band spectrum splits into (q) subbands. As the flux is varied, these subbands form the intricate and self-similar **Hofstadter butterfly**. Beyond their energies, these subbands have important **topological properties**. Each band can carry a **Chern number**, an integer that measures how the quantum states twist as momentum varies across the Brillouin zone. More precisely, the Chern number is the integer corresponding to the Berry phase along a closed path. These integers are not sensitive to small perturbations and lead to robust physical effects. A key consequence is the **quantized Hall effect**: when the Fermi energy lies in a gap between subbands, the Hall conductivity is quantized and determined by the sum of Chern numbers of the occupied bands.
+The Hofstadter model describes electrons moving on a two-dimensional square lattice with a perpendicular uniform magnetic field. The magnetic field affects adds phase factors to the hopping between neighboring sites. The total phase picked up around a lattice plaquette corresponds to a magnetic flux $`\phi`$. When the flux is rational, i.e. $`\phi = 2 \pi \frac{p}{q}`$ for coprime integers $`p, q`$, the magnetic field enlarges the effective unit cell of the lattice in real space. The single-band spectrum splits into $`q`$ subbands. As the flux is varied, these subbands form the intricate and self-similar **Hofstadter butterfly**. Beyond their energies, these subbands have important **topological properties**. Each band can carry a **Chern number**, an integer that measures how the quantum states twist as momentum varies across the Brillouin zone. More precisely, the Chern number is the integer corresponding to the Berry phase along a closed path. These integers are not sensitive to small perturbations and lead to robust physical effects. A key consequence is the **quantized Hall effect**: when the Fermi energy lies in a gap between subbands, the Hall conductivity is quantized and determined by the sum of Chern numbers of the occupied bands.
 
 This code analyzes these topological properties using **Wilson loops**, a practical and gauge-invariant way to compute Berry phases. By tracking how occupied Bloch states evolve along closed paths in momentum space, the phases of the Wilson loop eigenvalues reveal the winding behavior associated with non-zero Chern numbers.
 
@@ -37,11 +37,11 @@ pip install numpy matplotlib
 ### Hofstadter Hamiltonian
 
 * **`make_H(kx, ky, p, q, tb, ta)`**
-  Constructs the (q \times q) Hofstadter Hamiltonian at momentum
-  ((k_x, k_y)) for magnetic flux
-  [
+  Constructs the $`q \times q`$ Hofstadter Hamiltonian at momentum
+  $`(k_x, k_y)`$ for magnetic flux
+  ```math
   \phi = 2\pi \frac{p}{q}
-  ]
+  ```
   tb and ta are hopping parameters.
 
 ---
@@ -53,7 +53,7 @@ pip install numpy matplotlib
 
 * **`plot_spectra(n, p, q, tb, ta)`**
   Generates a 3D surface plot of the energy bands as functions of
-  (k_x) and (k_y).
+  $`k_x`$ and $`k_y`$.
 
 ---
 
@@ -90,9 +90,9 @@ q = 3          # flux denominator
 
 This computes Wilson loop phases for the magnetic flux:
 
-\[
+```math
 \phi =  2 \pi \frac{1}{3}
-\]
+```
 
 ---
 
