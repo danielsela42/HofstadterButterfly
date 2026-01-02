@@ -36,7 +36,7 @@ pip install numpy matplotlib
 
 ### Hofstadter Hamiltonian
 
-**`make_H(kx, ky, p, q, tb, ta)`**
+**`make_H(kx, ky, p, q, tb, ta)`**\
   Constructs the $`q \times q`$ Hofstadter Hamiltonian at momentum
   $`(k_x, k_y)`$ for magnetic flux
 
@@ -49,23 +49,23 @@ tb and ta are hopping parameters.
 
 ### Energy Spectrum
 
-**`get_eigenvalues(n, kx, ky, tb, ta)`**
+**`get_eigenvalues(n, kx, ky, tb, ta)`**\
 Computes Hamiltonian eigenvalues for all coprime fluxes with denominator up to `n`.
 
-**`plot_spectra(n, p, q, tb, ta)`**
+**`plot_spectra(n, p, q, tb, ta)`**\
 Generates a 3D surface plot of the energy bands as functions of $`k_x`$ and $`k_y`$.
 
 ---
 
 ### Wilson Loop & Topology
 
-**`w_eigs(...)`**
+**`w_eigs(...)`**\
 Computes the eigenvalue phases of the Wilson loop operator for selected bands.
 
-**`plot_phase(...)`**
+**`plot_phase(...)`**\
 Plots Wilson loop phases (Berry phases) versus momentum.
 
-**`get_hall_cond(n, p, q, tb, ta)`**
+**`get_hall_cond(n, p, q, tb, ta)`**\
 Analyzes the Hall conductivity by computing Wilson loops across the Brillouin zone.
 
 ---
