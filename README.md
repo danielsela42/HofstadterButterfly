@@ -1,7 +1,3 @@
-Below is a **ready-to-copy `README.md`** formatted cleanly for GitHub. You can paste this directly into a file named `README.md` in your repository.
-
----
-
 # Hofstadter Model & Wilson Loop Analysis
 
 This repository contains a Python implementation of the **Hofstadter model**, a tight-binding lattice model describing electrons on a 2D lattice in a magnetic field. The code computes energy spectra, visualizes band structures, and analyzes the Hall conductivity using **Wilson loops**.
@@ -94,9 +90,9 @@ q = 3          # flux denominator
 
 This computes Wilson loop phases for the magnetic flux:
 
-[
+\[
 \phi =  2 \pi \frac{1}{3}
-]
+\]
 
 ---
 
