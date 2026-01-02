@@ -39,9 +39,7 @@ pip install numpy matplotlib
 * **`make_H(kx, ky, p, q, tb, ta)`**
   Constructs the $`q \times q`$ Hofstadter Hamiltonian at momentum
   $`(k_x, k_y)`$ for magnetic flux
-  ```math
-  \phi = 2\pi \frac{p}{q}
-  ```
+  $$\phi = 2\pi \frac{p}{q}$$
   tb and ta are hopping parameters.
 
 ---
